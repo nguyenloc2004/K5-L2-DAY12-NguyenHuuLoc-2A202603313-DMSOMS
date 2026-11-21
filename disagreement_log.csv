@@ -1,0 +1,43 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,face,eye_left,khác giá trị (IoU=0.79),closed,open,mine,4.5,"Thấy rõ hai mí khép, không còn khe mắt → closed (4.5). Giữ nguyên"
+D01.png,face,eye_right,khác giá trị (IoU=0.79),closed,open,mine,4.5,"Thấy rõ hai mí khép, không còn khe mắt → closed (4.5). Giữ nguyên"
+D01.png,face,gaze_zone,khác giá trị (IoU=0.79),lap,road,mine,4.5,Đầu và mắt hướng xuống đùi → lap (4.5). Giữ nguyên
+D01.png,face13,right_eye_outer.occluded,khác cờ,0,1,mine,4.6,Khóe ngoài mắt phải thấy rõ vị trí → không bật cờ (4.6). Giữ nguyên
+D03.png,face,eye_left,khác giá trị (IoU=0.81),unknown,open,mine,4.5,"Không phân biệt được khe mắt mở hay mí khép → unknown, không đoán (4.4-1, 4.5). Giữ nguyên"
+D03.png,face,eye_right,khác giá trị (IoU=0.81),unknown,open,mine,4.5,"Không phân biệt được khe mắt mở hay mí khép → unknown, không đoán (4.4-1, 4.5). Giữ nguyên"
+D03.png,face,gaze_zone,khác giá trị (IoU=0.81),cluster,road,mine,4.5,Hướng đầu và mắt về đồng hồ sau vô lăng → cluster (4.5). Giữ nguyên
+D03.png,person,seatbelt,khác giá trị (IoU=0.85),unknown,not_worn,mine,4.7,Không thấy rõ vùng dây an toàn → unknown; not_worn chỉ khi thấy rõ không có dây (4.7). Giữ nguyên
+D03.png,phone,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.7,"Không thấy cạnh, góc hay màn hình điện thoại → không vẽ phone (4.7). Giữ nguyên; Long nên xóa box phone"
+D03.png,face13,right_eye_inner.occluded,khác cờ,1,0,mine,4.6,"Mắt phải bị che nhưng đoán chắc vị trí → occluded, khớp eye_right=unknown (4.6). Giữ nguyên"
+D03.png,face13,right_eye_upper.occluded,khác cờ,1,0,mine,4.6,"Mắt phải bị che nhưng đoán chắc vị trí → occluded, khớp eye_right=unknown (4.6). Giữ nguyên"
+D03.png,face13,right_eye_lower.occluded,khác cờ,1,0,mine,4.6,"Mắt phải bị che nhưng đoán chắc vị trí → occluded, khớp eye_right=unknown (4.6). Giữ nguyên"
+D04.png,face,gaze_zone,khác giá trị (IoU=0.85),road,other,mine,4.5,Tài xế nhìn qua kính chắn gió phía trước → road (4.5). Giữ nguyên
+D04.png,face,glasses,khác giá trị (IoU=0.85),none,clear,mine,4.5,Tài xế không đeo kính ở khung này → glasses=none (4.5). Giữ nguyên
+D04.png,face13,mouth_left.occluded,khác cờ,0,1,mine,4.6,"Miệng bị tay cầm cốc nước che hết, không đoán được vị trí → cả hai đều đã bật outside; Long bật thêm occluded nhưng điểm đã outside thì cờ occluded không còn ý nghĩa (4.6). Không cần sửa"
+D04.png,face13,mouth_right.occluded,khác cờ,0,1,mine,4.6,"Miệng bị tay cầm cốc nước che hết, không đoán được vị trí → cả hai đều đã bật outside; Long bật thêm occluded nhưng điểm đã outside thì cờ occluded không còn ý nghĩa (4.6). Không cần sửa"
+D04.png,face13,lip_upper.occluded,khác cờ,0,1,mine,4.6,"Miệng bị tay cầm cốc nước che hết, không đoán được vị trí → cả hai đều đã bật outside; Long bật thêm occluded nhưng điểm đã outside thì cờ occluded không còn ý nghĩa (4.6). Không cần sửa"
+D04.png,face13,lip_lower.occluded,khác cờ,0,1,mine,4.6,"Miệng bị tay cầm cốc nước che hết, không đoán được vị trí → cả hai đều đã bật outside; Long bật thêm occluded nhưng điểm đã outside thì cờ occluded không còn ý nghĩa (4.6). Không cần sửa"
+D05.png,face,eye_left,khác giá trị (IoU=0.69),unknown,open,mine,4.5,"Không phân biệt được khe mắt mở hay mí khép → unknown, không đoán (4.4-1, 4.5). Giữ nguyên"
+D05.png,face,eye_right,khác giá trị (IoU=0.69),unknown,open,mine,4.5,"Không phân biệt được khe mắt mở hay mí khép → unknown, không đoán (4.4-1, 4.5). Giữ nguyên"
+D05.png,face13,nose_tip.occluded,khác cờ,1,0,mine,4.6,Mũi và miệng bị che nhưng đoán chắc vị trí → occluded (4.6). Giữ nguyên
+D05.png,face13,mouth_left.occluded,khác cờ,1,0,mine,4.6,Mũi và miệng bị che nhưng đoán chắc vị trí → occluded (4.6). Giữ nguyên
+D05.png,face13,lip_upper.occluded,khác cờ,1,0,mine,4.6,Mũi và miệng bị che nhưng đoán chắc vị trí → occluded (4.6). Giữ nguyên
+D05.png,face13,lip_lower.occluded,khác cờ,1,0,mine,4.6,Mũi và miệng bị che nhưng đoán chắc vị trí → occluded (4.6). Giữ nguyên
+D06.png,person,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.45,,peer,4.4-5,"Box person của Loc ở v1 không sát phần cơ thể thấy được; Loc vẽ lại box trong export_final_v2, nay khớp box của Long (4.4-5)"
+D06.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.4-5,"Box person của Loc ở v1 không sát phần cơ thể thấy được; Loc vẽ lại box trong export_final_v2, nay khớp box của Long (4.4-5)"
+D06.png,face13,left_eye_outer.occluded,khác cờ,0,1,mine,4.6,"Mắt trái không bị che, chỉ không rõ mở hay khép → điểm không cờ, eye_left=unknown (4.6). Giữ nguyên"
+D06.png,face13,left_eye_inner.occluded,khác cờ,0,1,mine,4.6,"Mắt trái không bị che, chỉ không rõ mở hay khép → điểm không cờ, eye_left=unknown (4.6). Giữ nguyên"
+D06.png,face13,left_eye_upper.occluded,khác cờ,0,1,mine,4.6,"Mắt trái không bị che, chỉ không rõ mở hay khép → điểm không cờ, eye_left=unknown (4.6). Giữ nguyên"
+D06.png,face13,left_eye_lower.occluded,khác cờ,0,1,mine,4.6,"Mắt trái không bị che, chỉ không rõ mở hay khép → điểm không cờ, eye_left=unknown (4.6). Giữ nguyên"
+D06.png,face13,right_eye_outer.occluded,khác cờ,1,0,mine,4.6,Mắt phải bị che nhưng đoán chắc vị trí → occluded; outside chỉ khi không đoán được (4.6). Giữ nguyên
+D06.png,face13,right_eye_outer.outside,khác cờ,0,1,mine,4.6,Mắt phải bị che nhưng đoán chắc vị trí → occluded; outside chỉ khi không đoán được (4.6). Giữ nguyên
+D06.png,face13,right_eye_inner.occluded,khác cờ,1,0,mine,4.6,Mắt phải bị che nhưng đoán chắc vị trí → occluded; outside chỉ khi không đoán được (4.6). Giữ nguyên
+D06.png,face13,right_eye_inner.outside,khác cờ,0,1,mine,4.6,Mắt phải bị che nhưng đoán chắc vị trí → occluded; outside chỉ khi không đoán được (4.6). Giữ nguyên
+D06.png,face13,right_eye_upper.occluded,khác cờ,1,0,mine,4.6,Mắt phải bị che nhưng đoán chắc vị trí → occluded; outside chỉ khi không đoán được (4.6). Giữ nguyên
+D06.png,face13,right_eye_upper.outside,khác cờ,0,1,mine,4.6,Mắt phải bị che nhưng đoán chắc vị trí → occluded; outside chỉ khi không đoán được (4.6). Giữ nguyên
+D06.png,face13,right_eye_lower.occluded,khác cờ,1,0,mine,4.6,Mắt phải bị che nhưng đoán chắc vị trí → occluded; outside chỉ khi không đoán được (4.6). Giữ nguyên
+D06.png,face13,right_eye_lower.outside,khác cờ,0,1,mine,4.6,Mắt phải bị che nhưng đoán chắc vị trí → occluded; outside chỉ khi không đoán được (4.6). Giữ nguyên
+S01_ir.png,infant_seat,facing,khác giá trị (IoU=0.89),rear,front,peer,4.8,Nôi ở rear_left quay về phía trước xe → facing=front. Loc sửa S01_ir thành front trong export_final_v2
+S01_rgb.png,child_seat,occupied,khác giá trị (IoU=0.94),unknown,yes,peer,4.8,Trên ảnh RGB thấy rõ trẻ ngồi trong ghế → occupied=yes. Loc sửa S01_rgb thành yes trong export_final_v2
+S04_ir.png,child_seat,occupied,khác giá trị (IoU=0.93),unknown,yes,peer,4.8,Thấy rõ trẻ ngồi ở rear_middle → occupied=yes. Loc sửa S04_ir thành yes trong export_final_v2
+S04_rgb.png,child_seat,occupied,khác giá trị (IoU=0.89),unknown,yes,peer,4.8,Thấy rõ trẻ ngồi ở rear_middle → occupied=yes. Loc sửa S04_rgb thành yes trong export_final_v2

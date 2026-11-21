@@ -1,0 +1,19 @@
+File: export_final_v2.zip
+Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=12, face=5, face13=5, hand=12, infant_seat=7, object=11, person=10
+  [WARN] D03.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D05.png: left_eye_outer nằm bên trái ảnh so với right_eye_outer: kiểm lại quy ước trái/phải theo người (đúng nếu mặt quay hẳn sang bên)
+  [WARN] D05.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D05.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D06.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+Kết quả: 0 lỗi, 5 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+Giải thích cảnh báo:
+- D05 "left_eye_outer nằm bên trái ảnh": ảnh D## xoay ~90°, hai mắt xếp theo trục y. Đã kiểm toạ độ: cả 4 điểm left_eye_* đều có y lớn hơn right_eye_* tương ứng, nên trái/phải theo người là đúng (CHECKPOINTS, Checkpoint B).
+- D03 (mắt trái), D05 (hai mắt), D06 (mắt trái) "eye_*=unknown nhưng không điểm nào có cờ": vùng mắt không bị che, thấy được vị trí khóe và mép mí nên các điểm face13 đặt bình thường, không bật cờ (GUIDE 4.6: cờ chỉ dùng cho điểm bị che). Nhưng ảnh không đủ rõ để phân biệt khe mắt mở hay hai mí khép, nên trạng thái mắt ghi unknown thay vì đoán (GUIDE 4.4-1, 4.5).
+- Schema dùng child_seat.occupied có thêm giá trị 'yes' theo yêu cầu của Lab Coach (cabin_schema.py đã cập nhật).
+
+Thay đổi so với export_final.zip (sau review chéo, xem disagreement_log.csv):
+- S01_ir: infant_seat facing rear → front
+- S01_rgb: child_seat occupied unknown → yes
+- S04_rgb, S04_ir: child_seat (rear_middle) occupied unknown → yes
+- D06: vẽ lại box person cho sát phần cơ thể thấy được
